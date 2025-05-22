@@ -1,6 +1,16 @@
+interface Place {
+    name: string;
+    description: string;
+}
+
 function CardExample() {
 
-    const places = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"];
+    const places: Place[] = [
+    { name: "Los Angeles", description: "A city in California." },
+    { name: "Chicago", description: "A city in Illinois." },
+    { name: "Houston", description: "A city in Texas." },
+    { name: "Phoenix", description: "A city in Arizona." }
+    ];
 
   return (
     <>
@@ -12,11 +22,11 @@ function CardExample() {
             key={index}>
 
             <div className="card-body">
-                <h5 className="card-title">{place}</h5>
+                <h5 className="card-title">{place.name}</h5>
                 <p className="card-text">
-                    A wonderful place to travel to!
+                    {place.description}
                 </p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
+            <a href="https://google.com" className="btn btn-primary">Go to {place.name} →</a>
             </div>
         </div>))}
     </>
