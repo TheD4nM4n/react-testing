@@ -1,5 +1,4 @@
 import CardExample from "../../components/CardExample";
-import JustinComponent from "../../components/JustinComponent/JustinComponent";
 
 function DanPage() {
   return (
