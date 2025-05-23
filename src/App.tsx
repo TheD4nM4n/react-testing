@@ -6,7 +6,6 @@ import JustinComponent from "./JustinComponent/JustinComponent";
 function App() {
   return (
   <div>
-    <Center>
       <h1 className="title">
         Welcome to the Playground
       </h1>
@@ -15,9 +14,10 @@ function App() {
           Be careful in here, it's scary
         </i>
       </h2>
-      <CardExample />
-      <JustinComponent />
-    </Center>    
+      <div className="card-container">
+        <CardExample />
+        <JustinComponent />
+      </div>
   </div>
   );
 }

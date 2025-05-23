@@ -8,3 +8,16 @@
     margin-bottom: 16px;
     color: #d0d0d0;
 }
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}

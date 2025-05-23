@@ -14,27 +14,25 @@ function CardExample() {
 
   return (
     <>
-    <div style={
-        {display: 'flex',
-        flexDirection: 'row',
-          flexWrap: 'wrap',
-          justifyContent: 'center',
-          gap: '16px'}}>
-        {places.map((place, index) => (
-            <div className="card" 
-                style={
-                    {width: '18rem',
-                    padding: '5px'}} 
-                key={index}>
-                <div className="card-body">
-                    <h5 className="card-title">{place.name}</h5>
-                    <p className="card-text">
-                        {place.description}
-                    </p>
-                <a href="https://google.com" className="btn btn-primary">Go to {place.name} →</a>
-                </div>
-            </div>))}
-    </div>
+    {places.map((place, index) => (
+        <div className="card" 
+            style={
+                {width: '18rem',
+                padding: '5px'}} 
+            key={index}>
+            <div className="card-body">
+                <h5 className="card-title">
+                    {place.name}
+                </h5>
+                <p className="card-text">
+                    {place.description}
+                </p>
+            <a href="https://google.com"
+                className="btn btn-primary">
+                Go to {place.name} →
+            </a>
+            </div>
+        </div>))}
     </>
   );
 }
