@@ -16,7 +16,7 @@ function ListGroup() {
                         ? "list-group-item active"
                         : "list-group-item"}
                     key={item}
-                    onClick={(e) => setSelectedIndex(index)}
+                    onClick={() => setSelectedIndex(index)}
                 >
                     {item}
                 </li>)

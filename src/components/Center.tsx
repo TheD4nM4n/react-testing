@@ -1,4 +1,4 @@
-function Center(props: any){
+function Center(props: React.PropsWithChildren){
     return (
         <div style={{
             display: 'flex',
