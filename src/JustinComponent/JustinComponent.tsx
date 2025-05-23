@@ -12,7 +12,7 @@ function JustinComponent() {
         <div className="card-body">
           pls donate monies :)
         </div>
-                  <button type="button" class="btn btn-primary">
+                  <button type="button" className="btn btn-primary">
             <a>Donate</a>
           </button>
       </div>
