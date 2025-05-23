@@ -1,7 +1,10 @@
-.justincomponent {
-    background-color: lavender;
-    color: black;
-    padding: 20px 40px;
-    border-radius: 5px;
-    border: none;
+.title {
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.subtitle {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    color: #d0d0d0;
 }
