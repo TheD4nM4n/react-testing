@@ -1,10 +1,12 @@
 .title {
     margin-top: 16px;
+    margin-inline-start: 16px;
     margin-bottom: 0px;
 }
 
 .subtitle {
     margin-top: 0px;
+    margin-inline-start: 16px;
     margin-bottom: 16px;
     color: #d0d0d0;
 }

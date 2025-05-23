@@ -1,7 +1,6 @@
 import CardExample from "./components/CardExample";
-import Center from "./components/Center";
 import "./App.css";
-import JustinComponent from "./JustinComponent/JustinComponent";
+import JustinComponent from "./components/JustinComponent/JustinComponent";
 
 function App() {
   return (
