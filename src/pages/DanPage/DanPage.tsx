@@ -14,7 +14,6 @@ function DanPage() {
       </h2>
       <div className="card-container">
         <CardExample />
-        <JustinComponent />
       </div>
   </div>
   );

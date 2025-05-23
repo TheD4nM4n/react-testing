@@ -19,6 +19,12 @@
     gap: 16px;
 }
 
+.menubar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #333333;
+}
 body {
     background-color: #1e1e1e;
     color: #ffffff;

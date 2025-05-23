@@ -3,6 +3,7 @@ import "./App.css";
 import JustinComponent from "./components/JustinComponent/JustinComponent";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
+import { Button } from "react-bootstrap";
 import DanPage from "./pages/DanPage/DanPage";
 import JustinPage from "./pages/JustinPage/JustinPage";
 
@@ -12,13 +13,13 @@ function App() {
       <nav>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Button variant="primary" href="/">Home</Button>
           </li>
           <li>
-            <a href="/dan">Dan</a>
+            <Button variant="primary" href="/dan">Dan</Button>
           </li>
           <li>
-            <a href="/justin">Justin</a>
+            <Button variant="primary" href="/justin">Justin</Button>
           </li>
         </ul>
       </nav>
