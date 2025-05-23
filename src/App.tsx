@@ -1,6 +1,6 @@
 import CardExample from "./components/CardExample";
 import Center from "./components/Center";
-import JustinComponent from "./components/JustinComponent";
+import JustinComponent from "./JustinComponent/JustinComponent";
 import ListGroup from "./components/ListGroup";
 import Message from "./Message";
 

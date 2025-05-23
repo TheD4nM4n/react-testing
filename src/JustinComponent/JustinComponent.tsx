@@ -1,13 +1,15 @@
+import styles from './JustinComponent.module.css'
+
 function JustinComponent() {
   return (
-    <div>
+    <div className={styles.justincomponent}>
       <h1>Justin Component</h1>
       <p>This is a component.</p>
-      <div class="card">
-        <div class="card-header">
+      <div className="card">
+        <div className="card-header">
           I'm very hungry
         </div>
-        <div class="card-body">
+        <div className="card-body">
           pls donate monies :)
         </div>
                   <button type="button" class="btn btn-primary">
