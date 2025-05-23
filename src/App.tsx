@@ -11,17 +11,11 @@ function App() {
   return (
     <BrowserRouter>
       <nav>
-        <ul>
-          <li>
+        <div className="navbar">
             <Button variant="primary" href="/">Home</Button>
-          </li>
-          <li>
             <Button variant="primary" href="/dan">Dan</Button>
-          </li>
-          <li>
             <Button variant="primary" href="/justin">Justin</Button>
-          </li>
-        </ul>
+        </div>
       </nav>
       <Routes>
         <Route path="/" element={<HomePage />} />
