@@ -1,4 +1,5 @@
 import JustinComponent from "../../components/JustinComponent/JustinComponent";
+import Accordian from "../../components/Accordian/Accordian";
 
 function JustinPage() {
   return (
@@ -13,6 +14,7 @@ function JustinPage() {
       </h2>
       <div className="card-container">
         <JustinComponent />
+        <Accordian />
       </div>
   </div>
   );
