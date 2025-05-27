@@ -32,7 +32,8 @@ function CardExample() {
                 Go to {place.name} →
             </a>
             </div>
-        </div>))}
+        </div>
+        ))}
     </>
   );
 }

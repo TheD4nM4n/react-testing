@@ -1,4 +1,5 @@
-import CardExample from "../../components/CardExample";
+import CardExample from "../../components/cards/CardExample";
+import WelcomeCard from "../../components/cards/WelcomeCard/WelcomeCard";
 
 function DanPage() {
   return (
@@ -13,6 +14,7 @@ function DanPage() {
       </h2>
       <div className="card-container">
         <CardExample />
+        <WelcomeCard />
       </div>
   </div>
   );
