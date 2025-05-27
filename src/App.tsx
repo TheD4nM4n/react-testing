@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import DanPage from "./pages/DanPage/DanPage";
 import JustinPage from "./pages/JustinPage/JustinPage";
 import Sidebar from "./components/Sidebar/Sidebar";
+import { AppBar, Toolbar, Typography } from "@mui/material";
 
 function App() {
   
