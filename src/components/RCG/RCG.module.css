@@ -1,0 +1,18 @@
+.wrapper{
+    background-color: lavender;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content{
+    height: auto;
+    width: auto;
+    justify-content: center;
+    margin: 50px 50px;
+}
+
+.button{
+    width: auto;
+    height: auto;
+    margin: 10px 25px;
+}

@@ -1,5 +1,6 @@
 import JustinComponent from "../../components/JustinComponent/JustinComponent";
 import Accordian from "../../components/Accordian/Accordian";
+import RCG from "../../components/RCG/RCG";
 
 function JustinPage() {
   return (
@@ -15,6 +16,7 @@ function JustinPage() {
       <div className="card-container">
         <JustinComponent />
         <Accordian />
+        <RCG />
       </div>
   </div>
   );
