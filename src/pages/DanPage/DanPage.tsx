@@ -1,21 +1,12 @@
-import CardExample from "../../components/cards/CardExample";
+import { Typography } from "@mui/material";
 import WelcomeCard from "../../components/cards/WelcomeCard/WelcomeCard";
-
+import styles from "./DanPage.module.css";
 function DanPage() {
   return (
   <div>
-      <h1 className="title">
-        Welcome to the Playground
-      </h1>
-      <h2 className="subtitle">
-        <i>
-          Be careful in here, it's scary
-        </i>
-      </h2>
-      <div className="card-container">
-        <CardExample />
-        <WelcomeCard />
-      </div>
+      <Typography className={styles.welcome}>
+        Welcome to Dan's Page
+      </Typography>
   </div>
   );
 }

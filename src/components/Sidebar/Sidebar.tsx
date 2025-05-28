@@ -1,35 +1,64 @@
-import { useState } from "react";
-import { Button, Offcanvas, Nav } from "react-bootstrap";
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Toolbar, Typography } from "@mui/material";
+import { useState } from 'react';
+import {
+  Drawer,
+  Button,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  IconButton,
+  Typography,
+  ListItemIcon,
+} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import Accessibility from '@mui/icons-material/Accessibility';
 
-function Sidebar() {
-    
-    const [sidebarVisible, setSidebarVisible] = useState(false);
-    const toggleSidebar = () => setSidebarVisible(!sidebarVisible);
+export default function MyDrawer() {
+  const [open, setOpen] = useState(false);
 
-    return ( <>
-    <Toolbar>
-      <i className="bi bi-list"
-        onClick={toggleSidebar}
-        style={{ marginInlineStart: "16px", fontSize: "40px" }}></i>
-        
-        <Typography variant="h6">The Playground</Typography>
-      </Toolbar>
+  const toggleDrawer = (state: boolean) => () => {
+    setOpen(state);
+  };
 
-    <Offcanvas show={sidebarVisible} onHide={toggleSidebar}>
-      <Offcanvas.Header closeButton>
-        <Offcanvas.Title>The Playground</Offcanvas.Title>
-      </Offcanvas.Header>
-      <Offcanvas.Body>
-        <Nav className="flex-column">
-          <Button variant="primary" style={{marginBottom: '8px'}} href="/">Home</Button>
-          <Button variant="primary" style={{marginBottom: '8px'}} href="/dan">Dan</Button>
-          <Button variant="primary" href="/justin">Justin</Button>
-        </Nav>
-      </Offcanvas.Body>
-    </Offcanvas>
-    </>)
+  const drawerList = (
+    <List>
+  
+      <ListItem key="home" disablePadding>
+          <ListItemIcon>
+            <Accessibility />
+          </ListItemIcon>
+          <ListItemButton component="a" href="/">
+            <ListItemText primary="Home" />
+          </ListItemButton>
+        </ListItem>
+      <ListItem key="dan" disablePadding>
+        <ListItemIcon>
+          <Accessibility />
+        </ListItemIcon>
+        <ListItemButton component="a" href='/dan'>
+          <ListItemText primary="Dan's Page" />
+        </ListItemButton>
+      </ListItem>
+      <ListItem key="justin" disablePadding>
+        <ListItemIcon>
+          <Accessibility />
+        </ListItemIcon>
+        <ListItemButton component="a" href='/justin'>
+          <ListItemText primary="Justin's Page" />
+        </ListItemButton>
+      </ListItem>
+    </List>
+  );
+
+  return (
+    <div style={{ width: '100vx', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <IconButton edge='start' aria-label='menu' onClick={toggleDrawer(true)} sx={{ mr: 2, marginInlineStart: '3px', }}>
+        <MenuIcon fontSize='large'/>
+      </IconButton>
+      <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>The Playground</Typography>
+      <Drawer anchor="left" open={open} onClose={toggleDrawer(false)}>
+        {drawerList}
+      </Drawer>
+    </div>
+  );
 }
-
-export default Sidebar;

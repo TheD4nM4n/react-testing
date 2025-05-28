@@ -8,22 +8,11 @@ import Box from "@mui/material/Box";
 const card = (
   <>
     <CardContent>
-      <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
-        Word of the Day
+      <Typography variant="h6" component="div">
+        Welcome back to the Playground
       </Typography>
-      <Typography variant="h5" component="div">
-        benevolent
-      </Typography>
-      <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>adjective</Typography>
-      <Typography variant="body2">
-        well meaning and kindly.
-        <br />
-        {'"a benevolent smile"'}
-      </Typography>
+      <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>Hope you enjoy your stay.</Typography>
     </CardContent>
-    <CardActions>
-      <Button size="small">Learn More</Button>
-    </CardActions>
   </>
 );
 
