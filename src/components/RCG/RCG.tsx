@@ -1,7 +1,7 @@
 import styles from './RCG.module.css'
 import Stack from '@mui/material/Stack'
 import Button from '@mui/material/Button'
-import { backdropClasses, hexToRgb, rgbToHex } from '@mui/material';
+import { hexToRgb } from '@mui/material';
 import { useState } from 'react';
 
 function RCG(){
@@ -13,8 +13,8 @@ function RCG(){
     const [backgroundColor, setBackgroundColor] = useState('lavender');
     const [hexColor, setHexColor] = useState('');
     const [rgbColor, setRGBColor] = useState('');
-    const [hexVisible, setHexVisible] = useState('visible');
-    const [rgbVisible, setRGBVisible] = useState('visible')
+    const [hexVisible, setHexVisible] = useState<'visible'|'hidden'>('visible');
+    const [rgbVisible, setRGBVisible] = useState<'visible'|'hidden'>('visible');
     function GenerateHex() {
         const hlength = 6;
         const hex = '0123456789ABCDEF';

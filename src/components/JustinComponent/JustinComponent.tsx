@@ -15,7 +15,7 @@ function JustinComponent() {
         <div className={styles.hbutton}>
           <a href='https://cash.app/$PotatoMP3' target='blank' className={styles.hbutton}>
             <button type="button" className="btn btn-primary" style={{width: '100%'}}>
-              <a>Donate</a>
+              <div>Donate</div>
             </button>
           </a>
         </div>

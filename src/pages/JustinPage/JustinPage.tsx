@@ -1,6 +1,7 @@
 import JustinComponent from "../../components/JustinComponent/JustinComponent";
 import Accordian from "../../components/Accordian/Accordian";
 import RCG from "../../components/RCG/RCG";
+import StarRating from "../../components/StarRating/StarRating"
 
 function JustinPage() {
   return (
@@ -17,6 +18,7 @@ function JustinPage() {
         <JustinComponent />
         <Accordian />
         <RCG />
+        <StarRating />
       </div>
   </div>
   );
