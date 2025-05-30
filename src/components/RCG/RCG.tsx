@@ -43,8 +43,8 @@ function RCG(){
                     <Button variant='contained' className={styles.button} onClick={() => CreateRGB()}>Create RGB Color</Button>
                     <Button variant='contained' className={styles.button}>Generate Random Color</Button>
                 </Stack>
-                <h1 className={styles.content} style={{visibility: {hexVisible}}}>HEX Color: {hexColor}</h1>
-                <h2 className={styles.content} style={{visibility: {hexVisible}}}>RGB Color: {rgbColor}</h2>
+                <h1 className={styles.content} style={{visibility: hexVisible}}>HEX Color: {hexColor}</h1>
+                <h2 className={styles.content} style={{visibility: rgbVisible}}>RGB Color: {rgbColor}</h2>
             </Stack>
         </div>
     )
