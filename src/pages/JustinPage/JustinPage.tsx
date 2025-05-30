@@ -18,7 +18,7 @@ function JustinPage() {
         <JustinComponent />
         <Accordian />
         <RCG />
-        <StarRating />
+        <StarRating numberOfStars={10}/>
       </div>
   </div>
   );

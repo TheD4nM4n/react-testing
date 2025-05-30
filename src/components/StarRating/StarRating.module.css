@@ -3,3 +3,11 @@
     margin: 50px 25px;
     justify-content: center;
 }
+
+.active{
+    color: aquamarine;
+}
+
+.inactive{
+    color:white;
+}
