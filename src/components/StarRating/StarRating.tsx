@@ -2,7 +2,6 @@ import { Stack } from '@mui/material';
 import styles from './StarRating.module.css';
 import { StarRate } from '@mui/icons-material';
 import { useState } from 'react';
-import { pink } from '@mui/material/colors';
 
 function StarRating({numberOfStars=5}){
     {console.log(numberOfStars)}
