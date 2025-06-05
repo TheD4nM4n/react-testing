@@ -10,8 +10,8 @@ function ImageSlider({ url, limit = 5, page = 1 }) {
     try {
 
         setLoading(true)
-    
-      const response = await fetch('${getUrl}?list');
+      console.log(`${getUrl}?page=${page}&limit=${limit}`)
+      const response = await fetch(`${getUrl}?page=${page}&limit=${limit}`);
       const data = await response.json();
 
       if (data) {
@@ -22,11 +22,9 @@ function ImageSlider({ url, limit = 5, page = 1 }) {
       setErrorMsg(e.Message);
     }
   }
-  useEffect(() => {
-    if (url !== "") {
-      fetchImages(url);
-    }
-  }, [url]);
+  useEffect(() => 
+    {if (url !== "") fetchImages(url);   
+    }, [url]);
 
   console.log(images);
 
@@ -37,7 +35,18 @@ function ImageSlider({ url, limit = 5, page = 1 }) {
     return <div>Error occured! {errorMsg}</div>;
   }
 
-  return <div></div>;
+  return <div>
+    {
+        images && images.length ? images.map(imageItem => 
+            (<img
+            key={imageItem.id}
+            alt={imageItem.download_url}
+            src={imageItem.download_url}
+            className="current-image"
+            />)
+        )
+    : null}
+  </div>;
 }
 
 export default ImageSlider;

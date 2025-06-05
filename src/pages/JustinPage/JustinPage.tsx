@@ -2,6 +2,7 @@ import JustinComponent from "../../components/JustinComponent/JustinComponent";
 import Accordian from "../../components/Accordian/Accordian";
 import RCG from "../../components/RCG/RCG";
 import StarRating from "../../components/StarRating/StarRating"
+import ImageSlider from "../../components/ImageSlider/ImageSlider"
 
 function JustinPage() {
   return (
@@ -19,7 +20,7 @@ function JustinPage() {
         <Accordian />
         <RCG />
         <StarRating numberOfStars={10}/>
-        {/* <ImageSlider url={'https://picsum.photos/v2/list'} limit={'10'} page={'1'}/> */}
+        <ImageSlider url={'https://picsum.photos/v2/list'} limit={'10'} page={'1'}/>
       </div>
   </div>
   );
