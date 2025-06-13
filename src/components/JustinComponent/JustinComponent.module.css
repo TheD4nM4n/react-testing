@@ -1,9 +1,12 @@
 .justincomponent {
+    height: auto;
+    width: auto;
     background-color: lavender;
     color: black;
     padding: 20px 40px;
     border-radius: 5px;
     border: none;
+    margin: auto;
 }
 
 .hbutton {

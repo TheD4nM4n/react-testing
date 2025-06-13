@@ -1,0 +1,12 @@
+.item{
+    display: flex;
+    padding: 20px;
+}
+
+.cardcontainer{
+    display: grid;
+    grid-template: auto / auto auto auto;
+    grid-gap: 1%;
+    justify-items: auto;
+    justify-content: auto;
+}

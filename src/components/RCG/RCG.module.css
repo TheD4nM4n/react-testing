@@ -1,5 +1,7 @@
 .wrapper{
     justify-content: center;
+    width: auto;
+    height: auto;
     padding: 20px;
     margin: 50px 50px;
 }
@@ -11,7 +13,7 @@
     width: auto;
     justify-content: center;
     text-align: center;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 .button{
